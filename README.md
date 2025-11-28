@@ -1,16 +1,7 @@
-# React + Vite
+MiniZap: Automation Workflow Dashboard (UI Prototype)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository showcases the complete User Interface (UI) for a lightweight, self-hosted automation tool, which I've named MiniZap. Think of it as the dashboard you'd use to manage simple "If This, Then That" workflows, similar to tools like Zapier. 
 
-Currently, two official plugins are available:
+Important Note: This is currently a pure frontend project. The code here is focused on the user interface, routing, and styling. The data you see (such as run counts and active/inactive status) is static placeholder data used for visual presentation. There is no backend logic, database connection, or functional API integration yet. The actual automation code will be built in a later phase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The main purpose of this repository is to demonstrate the UI/UX for managing complex workflows with a clean, functional dashboard.
