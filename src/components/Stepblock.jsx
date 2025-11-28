@@ -1,4 +1,3 @@
-// src/components/StepBlock.jsx
 import React from 'react';
 import '../styles.css';
 

@@ -1,8 +1,5 @@
-/* src/styles.css - FULL ZAPIER-LIKE LAYOUT */
-
-/* --- Global Structure & Reset --- */
 body {
-    font-family: 'Inter', Arial, sans-serif; /* A modern font choice */
+    font-family: 'Inter', Arial, sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #f4f7f9;
@@ -10,21 +7,19 @@ body {
     overflow-x: hidden;
 }
 
-/* --- App Layout: Fixed Sidebar and Main Content --- */
 .app-layout {
     display: flex;
     min-height: 100vh;
 }
 
-/* --- Main Sidebar (Left Navigation) --- */
 .main-sidebar {
     width: 250px;
-    background-color: #191919; /* Dark background like Zapier's sidebar */
+    background-color: #191919; 
     color: white;
     padding: 20px 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fixes the sidebar position */
-    height: 100%; /* Makes it full screen height */
+    position: fixed; 
+    height: 100%; 
     overflow-y: auto;
 }
 
@@ -33,7 +28,7 @@ body {
     font-weight: 800;
     text-align: center;
     margin-bottom: 30px;
-    color: #ff4a00; /* Zapier-like accent color */
+    color: #ff4a00; 
 }
 
 .nav-link {
@@ -50,10 +45,9 @@ body {
     color: white;
 }
 
-/* --- Main Content Area --- */
 .main-content {
     flex-grow: 1;
-    margin-left: 250px; /* Offset to make room for the fixed sidebar */
+    margin-left: 250px; 
     padding: 30px;
 }
 
@@ -63,16 +57,12 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-/* --- Workflow Builder Styles (Adjusted for Full Screen) --- */
 .builder-area {
     background-color: white;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-/* All other styles (mock-button, step-block, app-card, etc.) remain as they were in the previous step,
-   but ensure you've copied them all into this file as well! */
-   /* --- Workflow List / Card Enhancements --- */
 
 .workflow-list-container {
     display: grid;
@@ -84,16 +74,16 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Stronger shadow for better lift */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s, box-shadow 0.2s;
-    border-left: 5px solid #007bff; /* Visual accent for the card */
+    border-left: 5px solid #007bff; 
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr; /* Defines column widths */
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr; 
     align-items: center;
 }
 
 .workflow-card:hover {
-    transform: translateY(-3px); /* Subtle lift effect */
+    transform: translateY(-3px); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -118,12 +108,12 @@ body {
 }
 
 .status-active {
-    background-color: #e6ffed; /* Light green background */
+    background-color: #e6ffed; 
     color: #28a745;
 }
 
 .status-inactive {
-    background-color: #f7f7f7; /* Light gray background */
+    background-color: #f7f7f7; 
     color: #6c757d;
 }
 
@@ -139,10 +129,8 @@ body {
     margin-left: 8px;
 }
 
-/* --- Home Page Specific Styles --- */
-
 .homepage-layout {
-    display: block; /* Override flex layout for the landing page */
+    display: block; 
 }
 
 .home-nav {

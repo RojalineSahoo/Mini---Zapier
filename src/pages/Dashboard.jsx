@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx - Enhanced Card Layout
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles.css';
@@ -17,7 +16,6 @@ function Dashboard() {
                 <p>You have **{mockWorkflows.length}** total workflows.</p>
             </div>
             
-            {/* The new Header Row (for structure/labels) */}
             <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1.5fr', fontWeight: 'bold', padding: '10px 20px', borderBottom: '1px solid #ddd' }}>
                 <div>Workflow Name</div>
                 <div>Status</div>
@@ -26,18 +24,15 @@ function Dashboard() {
                 <div>Action</div>
             </div>
 
-            {/* The Workflow List Container */}
             <div className="workflow-list-container">
                 {mockWorkflows.map(wf => (
                     <div className="workflow-card" key={wf.id}>
-                        {/* 1. Workflow Name */}
                         <div>
                             <Link to={`/build/${wf.id}`} className="card-name-link">
                                 {wf.name}
                             </Link>
                         </div>
                         
-                        {/* 2. Status Badge */}
                         <div>
                             <span 
                                 className={`workflow-status ${wf.status === 'Active' ? 'status-active' : 'status-inactive'}`}
@@ -45,20 +40,17 @@ function Dashboard() {
                                 {wf.status === 'Active' ? '✅ Active' : '⏸️ Inactive'}
                             </span>
                         </div>
-                        
-                        {/* 3. Runs Data */}
+                    
                         <div>
                             <span className="card-data-label">Total Runs</span>
                             {wf.runs}
                         </div>
                         
-                        {/* 4. Last Run Data */}
                         <div>
                             <span className="card-data-label">Last Successful Run</span>
                             {wf.lastRun}
                         </div>
                         
-                        {/* 5. Actions */}
                         <div className="card-action-group">
                             <button 
                                 className="mock-button" 

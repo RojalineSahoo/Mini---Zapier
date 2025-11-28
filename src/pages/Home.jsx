@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles.css';
@@ -7,15 +6,12 @@ function Home() {
     return (
         <div className="homepage-layout">
             
-            {/* Top Navigation for Landing Page */}
             <div className="home-nav">
                 <div className="sidebar-logo" style={{ margin: 0 }}>⚡ MiniZap</div>
                 <div>
-                    {/* Login Button */}
                     <Link to="/dashboard" className="login-button">
                         Login
                     </Link>
-                    {/* Primary CTA (Sign Up) */}
                     <Link to="/dashboard" className="cta-button">
                         Sign Up Free
                     </Link>
@@ -63,7 +59,6 @@ function Home() {
                 </div>
             </div>
             
-            {/* Simple Footer Placeholder */}
             <footer style={{ padding: '20px', textAlign: 'center', color: '#666', borderTop: '1px solid #eee' }}>
                 &copy; 2024 MiniZap Automation Platform.
             </footer>
